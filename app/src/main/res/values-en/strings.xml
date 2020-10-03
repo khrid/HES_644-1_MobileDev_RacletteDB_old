@@ -10,4 +10,15 @@
     <string name="nav_header_title">Android Studio</string>
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_admin">Administration</string>
+    <string name="about_authors"><![CDATA[David Crittin & Sylvain Meyer]]></string>
+    <string name="about_description">Made with love during our HES mobile development course</string>
+    <string name="about_version">v.</string>
+    <string name="about_githublink">Project GitHub</string>
+    <string name="admin_activated">Administrator mode enabled</string>
+    <string name="home_favorite">Favorites</string>
+    <string name="home_label_fromage">nomFromage</string>
+    <string name="home_alpagesemaine">Shieling of the week</string>
+    <string name="home_label_alpage">nomAlpage</string>
 </resources>

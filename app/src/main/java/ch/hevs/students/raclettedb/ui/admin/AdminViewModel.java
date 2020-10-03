@@ -1,16 +1,16 @@
-package ch.hevs.students.raclettedb.ui.slideshow;
+package ch.hevs.students.raclettedb.ui.admin;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class SlideshowViewModel extends ViewModel {
+public class AdminViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public SlideshowViewModel() {
+    public AdminViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("This is admin fragment");
     }
 
     public LiveData<String> getText() {

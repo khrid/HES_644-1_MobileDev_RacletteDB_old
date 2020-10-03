@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="menu_fromages">Käse</string>
-    <string name="menu_alpages">Alm</string>
+    <string name="menu_alpages">Alpweide</string>
     <string name="menu_about">Impressum</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -9,4 +9,15 @@
     <string name="nav_header_desc">Navigation header</string>
     <string name="nav_header_subtitle">android.studio@android.com</string>
     <string name="action_settings">Einstellungen</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_admin">Verwaltungsmenü</string>
+    <string name="about_authors"><![CDATA[David Crittin & Sylvain Meyer]]></string>
+    <string name="about_description">Mit Liebe entwickelt als Teil unserer HES-Ausbildung</string>
+    <string name="about_version">v.</string>
+    <string name="about_githublink">Projekt GitHub</string>
+    <string name="admin_activated">Administratormodus aktiviert</string>
+    <string name="home_favorite">Coups de coeur</string>
+    <string name="home_label_fromage">nomFromage</string>
+    <string name="home_alpagesemaine">Alpweide der Woche</string>
+    <string name="home_label_alpage">nomAlpage</string>
 </resources>
