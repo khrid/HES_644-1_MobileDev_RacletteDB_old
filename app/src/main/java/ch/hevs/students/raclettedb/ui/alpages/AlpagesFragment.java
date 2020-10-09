@@ -15,7 +15,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import ch.hevs.students.raclettedb.R;
-import ch.hevs.students.raclettedb.ui.fromages.Fromage;
+import ch.hevs.students.raclettedb.data.FakeData;
+import ch.hevs.students.raclettedb.data.Alpage;
 
 /**
  * A fragment representing a list of Items.
@@ -27,22 +28,14 @@ public class AlpagesFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 1;
     private ArrayList<Alpage> mValues;
+    private FakeData fakeData;// = new FakeData();
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
     public AlpagesFragment() {
-        mValues  = new ArrayList<Alpage>();
-        mValues.add(new Alpage("Verbier"));
-        mValues.add(new Alpage("Montana"));
-        mValues.add(new Alpage("Bagnes"));
-        mValues.add(new Alpage("Turtmann"));
-        mValues.add(new Alpage("Simplon"));
-        mValues.add(new Alpage("Visp"));
-        mValues.add(new Alpage("Anniviers"));
-        mValues.add(new Alpage("Vissoie"));
-        mValues.add(new Alpage("Lens"));
+        mValues  = fakeData.getAlpages();
     }
 
     // TODO: Customize parameter initialization
@@ -81,5 +74,9 @@ public class AlpagesFragment extends Fragment {
             recyclerView.setAdapter(new MyAlpageRecyclerViewAdapter(mValues));
         }
         return view;
+    }
+
+    public void setFakeData(FakeData fakeData) {
+        this.fakeData = fakeData;
     }
 }

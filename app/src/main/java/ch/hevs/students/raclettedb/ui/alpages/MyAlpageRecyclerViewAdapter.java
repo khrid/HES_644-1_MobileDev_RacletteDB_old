@@ -8,9 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import ch.hevs.students.raclettedb.R;
+import ch.hevs.students.raclettedb.data.Alpage;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /**
  * TODO: Replace the implementation with code for your data type.

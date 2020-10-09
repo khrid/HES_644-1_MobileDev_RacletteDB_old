@@ -8,6 +8,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import ch.hevs.students.raclettedb.R;
+import ch.hevs.students.raclettedb.data.Fromage;
 
 import java.util.ArrayList;
 

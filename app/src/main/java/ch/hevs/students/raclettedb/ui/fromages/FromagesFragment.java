@@ -15,6 +15,8 @@ import android.view.ViewGroup;
 import java.util.ArrayList;
 
 import ch.hevs.students.raclettedb.R;
+import ch.hevs.students.raclettedb.data.FakeData;
+import ch.hevs.students.raclettedb.data.Fromage;
 
 /**
  * A fragment representing a list of Items.
@@ -26,32 +28,14 @@ public class FromagesFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 1;
     private  ArrayList<Fromage> mValues;
+    private FakeData fakeData = new FakeData();
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
      * fragment (e.g. upon screen orientation changes).
      */
     public FromagesFragment() {
-        mValues  = new ArrayList<Fromage>();
-        mValues.add(new Fromage("Verbier"));
-        mValues.add(new Fromage("Montana"));
-        mValues.add(new Fromage("Bagnes"));
-        mValues.add(new Fromage("Turtmann"));
-        mValues.add(new Fromage("Simplon"));
-        mValues.add(new Fromage("Visp"));
-        mValues.add(new Fromage("Anniviers"));
-        mValues.add(new Fromage("Vissoie"));
-        mValues.add(new Fromage("Lens"));
-        mValues.add(new Fromage("Orsière"));
-        mValues.add(new Fromage("Illiez"));
-        mValues.add(new Fromage("Gomser"));
-        mValues.add(new Fromage("Heida"));
-        mValues.add(new Fromage("Mondralèche"));
-        mValues.add(new Fromage("Tanay"));
-        mValues.add(new Fromage("Champsot"));
-        mValues.add(new Fromage("Les Haudères"));
-        mValues.add(new Fromage("Vollèges"));
-        mValues.add(new Fromage("Etiez"));
+        mValues  = fakeData.getFromages();
     }
 
     // TODO: Customize parameter initialization

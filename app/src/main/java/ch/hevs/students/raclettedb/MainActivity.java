@@ -1,27 +1,24 @@
 package ch.hevs.students.raclettedb;
 
 import android.os.Bundle;
+import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.Menu;
 import android.widget.ImageView;
-import android.widget.TextView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.navigation.NavigationView;
-
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import androidx.drawerlayout.widget.DrawerLayout;
-import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
-import java.util.ArrayList;
-import java.util.Iterator;
+import com.google.android.material.navigation.NavigationView;
+import com.google.android.material.snackbar.Snackbar;
+
+import ch.hevs.students.raclettedb.data.FakeData;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -29,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
     private MenuItem muAdministration;
     private ImageView imDrawerHeaderLogo;
     private int adminClickCount = 0;
+    public static FakeData fakeData = new FakeData();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,8 +45,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Configuration des différents éléments du menu
         setup();
-
-
     }
 
     @Override
@@ -66,6 +62,7 @@ public class MainActivity extends AppCompatActivity {
         return NavigationUI.navigateUp(navController, mAppBarConfiguration)
                 || super.onSupportNavigateUp();
     }
+
 
     private void setup() {
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -88,7 +85,7 @@ public class MainActivity extends AppCompatActivity {
         imDrawerHeaderLogo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(++adminClickCount >= 5) {
+                if (++adminClickCount >= 5) {
                     showMenuAdministration();
                     View parentLayout = findViewById(android.R.id.content);
                     imDrawerHeaderLogo.setOnClickListener(null);
